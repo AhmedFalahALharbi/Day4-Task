@@ -81,17 +81,19 @@ const numbers = [1, 2, 3, 4, 5, 6];
 const evenNumbers = filterArray(numbers, num => num % 2 === 0);
 console.log(evenNumbers); 
 
-// Q6
-console.log("Q6:")
+
 async function fetchUsers(): Promise<{ id: number; name: string; email: string }[]> {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
         
+    
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const data = await response.json();
+
+        console.log("Fetched data:", data);
 
         return data.map((user: any) => ({
             id: user.id,

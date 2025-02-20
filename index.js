@@ -60,8 +60,6 @@ function filterArray(array, predicate) {
 const numbers = [1, 2, 3, 4, 5, 6];
 const evenNumbers = filterArray(numbers, num => num % 2 === 0);
 console.log(evenNumbers);
-// Q6
-console.log("Q6:");
 function fetchUsers() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -70,6 +68,7 @@ function fetchUsers() {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             const data = yield response.json();
+            console.log("Fetched data:", data);
             return data.map((user) => ({
                 id: user.id,
                 name: user.name,
