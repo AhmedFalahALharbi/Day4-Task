@@ -1,0 +1,1 @@
+This project includes simple TypeScript functions for common tasks like capitalizing words, validating numbers, creating users, calculating discounts, filtering arrays, fetching users from an API, and validating passwords.

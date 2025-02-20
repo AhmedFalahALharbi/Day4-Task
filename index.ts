@@ -1,5 +1,5 @@
 //Q1
-
+console.log("Q1:")
 function capitalizeWords(word: string): string {
     let capitalizedWord1: string = word.toUpperCase();
     let capitalizedWord2: string = capitalizedWord1.trim();
@@ -11,7 +11,7 @@ console.log(capitalizeWords("Hello"))
 
 
 //Q2
-
+console.log("Q2:")
 function isValidNumber(value: unknown): boolean {
     return typeof value === "number" && !isNaN(value);
 }
@@ -21,7 +21,7 @@ console.log(isValidNumber("hello"));
 console.log(isValidNumber(99))
 
 //Q3
-
+console.log("Q3:")
 interface User {
  id: number
  name: string
@@ -39,6 +39,7 @@ console.log(createUser({ id: 1, name: "ahmed", email: "ahmed@example.com" }));
 console.log(createUser({ id: 2, name: "khalid", email: "khalid@example.com", isAdmin: true })); 
 
 // Q4
+console.log("Q4:")
 class Product {
 
     private name: string;
@@ -71,6 +72,7 @@ console.log(product1.getProductDetails());
 console.log(product1.getDiscountedPrice(10));
 
 // Q5
+console.log("Q5:")
 function filterArray<T>(array: T[], predicate: (item: T) => boolean): T[] {
     return array.filter(predicate);
 }
@@ -80,6 +82,7 @@ const evenNumbers = filterArray(numbers, num => num % 2 === 0);
 console.log(evenNumbers); 
 
 // Q6
+console.log("Q6:")
 async function fetchUsers(): Promise<{ id: number; name: string; email: string }[]> {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -105,7 +108,7 @@ async function fetchUsers(): Promise<{ id: number; name: string; email: string }
 fetchUsers().then(users => console.log(users));
 
 // Q7
-
+console.log("Q7:")
 function isValidPassword(password: string): boolean {
 
     const weakPasswords = ["password", "123456", "qwerty", "123123", "welcome", "abc123", "letmein"];
