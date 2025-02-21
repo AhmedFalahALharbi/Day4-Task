@@ -22,7 +22,7 @@ function capitalizeWords(str: string): string {
 console.log(capitalizeWords("hello")); 
 console.log(capitalizeWords("hello everyone")); 
 console.log(capitalizeWords("HELLO WORLD")); 
-console.log(capitalizeWords("   ")); 
+console.log(capitalizeWords("  ")); 
 
 
 //Q2
