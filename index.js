@@ -26,7 +26,7 @@ function capitalizeWords(str) {
 console.log(capitalizeWords("hello"));
 console.log(capitalizeWords("hello everyone"));
 console.log(capitalizeWords("HELLO WORLD"));
-console.log(capitalizeWords("   "));
+console.log(capitalizeWords("  "));
 //Q2
 console.log("Q2:Number Validator Function");
 function isValidNumber(value) {
